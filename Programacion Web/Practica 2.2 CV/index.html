@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <Link rel="stylesheet" href="assets/css/lib/boostrap/bootstrap.min.css"></Link>
+  <Link rel="stylesheet" href="assets/css/site/site.css"></Link>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container-fluid">
+        <div class="col-12 col-sm-12 col-md-8 offset-md-2"s>
+          <div class="card">
+            <div class="card-header bg-primary">
+              <h5 class="text-center text-light">Register CV</h5>
+            </div>
+
+            <div class="card-title bg-secondary">
+              <h5 class="text-center text-light p-1">All information is required</h5>
+            </div>
+
+            <div class="mt-3 d-flex align-items-center">
+                <label for="name" class="fw-bold mx-1">Name:</label>
+                <input type="text" class="form-control me-1" id="name">
+            </div>
+
+            <div class="card-body d-block d-sm-block d-md-flex gap-1">
+              <!-- !PERSONAL INFO CARD -->
+              <!--  -->
+              <div class="card col-12 col-sm-12 col-md-4 mb-sm-3 mb-3 mb-md-0">
+                  <div class="card-header bg-primary">
+                    <h5 class="text-center text-light">Personal INFO</h5>
+                  </div>
+                  
+                  <div class="card-body" id="card-body-1">
+                    <div class="mt-3">
+                      <label for="address" class="fw-bold mx-1">Address:</label>
+                      <input type="text" class="form-control" id="address">
+                    </div>
+                    
+                    <div class="mt-3">
+                    <label for="phone" class="fw-bold mx-1">Phone:</label>
+                    <input type="text" class="form-control" id="phone">
+                  </div>
+                  
+                  <div class="mt-3">
+                    <label for="email" class="fw-bold mx-1">Email:</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+
+                  <div class="mt-3">
+                    <label for="image" class="fw-bold mx-1">Image:</label>
+                    <input type="file" class="form-control" id="image">
+                  </div>
+
+                  <div class="mt-3 d-flex gap-1">
+                    <div>
+                      <label for="language" class="fw-bold mx-1">Language:</label>
+                      <input type="text" class="form-control" id="language">
+                    </div>
+                    <div>
+                      <label for="level-language" class="fw-bold mx-1">Level:</label>
+                      <input type="text" class="form-control" id="level-language">
+                    </div>
+                  </div>
+                  
+                  <div class="mt-1">
+                    <button id="btn-language" type="button" class="btn btn-secondary w-100">Add Language</button>
+                  </div>
+                </div>
+              </div>
+              <!-- !ABOUT YOU CARD -->
+              <!--  -->
+              <div class="card col-12 col-sm-12 col-md-4 mb-sm-3 mb-3 mb-md-0">
+                <div class="card-header bg-primary">
+                  <h5 class="text-center text-light">About You</h5>
+                </div>
+
+                <div class="card-body">
+                  <div class="mt-3">
+                    <label for="summary" class="fw-bold">Summary:</label>
+                    <textarea class="form-control" name="summary" id="summary" cols="30" rows="3"></textarea>
+                  </div>
+
+                  <div class="mt-3">
+                    <label for="web-page" class="fw-bold mx-1">Web Page:</label>
+                    <input type="text" class="form-control" id="web-page">
+                  </div>
+
+                  <div class="mt-3">
+                    <label for="skill" class="fw-bold mx-1">Skill Highlight:</label>
+                    <input type="text" class="form-control" id="skill">
+                  </div>
+
+                  <div class="mt-1">
+                    <button id="btn-skill" type="button" class="btn btn-secondary w-100">Add Skill</button>
+                  </div>
+
+                  <h5 class="mt-3 text-center bg-primary p-1 text-light rounded-3 mb-0 rounded-bottom-0">Education</h5>
+                  <div class=" border border-3 border-secondary p-1 rounded-3 rounded-top-0">
+                    <div class="mt-3">
+                      <label for="institution" class="fw-bold mx-1">Institution:</label>
+                      <input type="text" class="form-control border-1" id="institution">
+                    </div>
+                    <div class="mt-3">
+                      <label for="career" class="fw-bold mx-1">Career:</label>
+                      <input type="text" class="form-control border-1" id="career">
+                    </div>
+                    <div class="mt-3">
+                      <label for="year" class="fw-bold mx-1">Year:</label>
+                      <input type="number" class="form-control border-1" id="year">
+                    </div>
+                  </div>
+
+                  <div class="mt-2">
+                    <button id="btn-education" type="button" class="btn btn-secondary w-100">Add Education</button>
+                  </div>
+                </div>
+              </div>
+              <!-- !EXPERIENCE CARD -->
+              <!--  -->
+              <div class="card col-12 col-sm-12 col-md-4">
+                <div class="card-header bg-primary">
+                  <h5 class="text-light text-center">Experience</h5>
+                </div>
+
+                <div class="card-body">
+
+                  <div class="border border-3 p-1 rounded-2 border-secondary mb-0">
+                    <div class="mt-3">
+                      <label for="job-title-1" class="fw-bold mx-1">Job Title:</label>
+                      <input type="text" class="form-control border-1" id="job-title">
+                    </div>
+                    
+                    <div class="mt-3">
+                      <label for="job-place-1" class="fw-bold mx-1">Job Place:</label>
+                      <input type="text" class="form-control border-1" id="job-place">
+                    </div>
+
+                    <div class="mt-3">
+                      <label for="description" class="fw-bold ">Description:</label>
+                      <textarea class="form-control border-1" name="description" id="description" cols="30" rows="3"></textarea>
+                    </div>
+
+                    <div class="mt-3">
+                      <label for="job-date-start-1" class="fw-bold mx-1">Date start:</label>
+                      <input type="date" class="form-control border-1" id="job-date-start">
+                    </div>
+                    <div>
+                      <label for="job-date-end-1" class="fw-bold mx-1">Date end:</label>
+                      <input type="date" class="form-control border-1 " id="job-date-end">
+                    </div>
+                  </div>
+
+                  <div class="mt-2">
+                    <button id="btn-add-job" type="button" class="btn btn-secondary w-100">Add Job</button>
+                  </div>
+
+                  <div class="mt-3">
+                    <label for="certificate" class="fw-bold mx-1">Certificate:</label>
+                    <input type="text" class="form-control border-1" id="certificate">
+                  </div>
+
+                  <div class="mt-1">
+                    <button id="btn-certificate" type="button" class="btn btn-secondary w-100">Add Certificate</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex"> 
+              <button id="btn-clear" class="btn btn-warning w-50 rounded-end-0" type="button">Clear</button>
+              <button id="btn-save" class="btn btn-primary w-50 rounded-start-0" type="button">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- !CURRICULUM -->
+      <!--  -->
+      <div class="row mt-5" id="cv">
+        <!-- <div class="col-4 col-sm-12 col-md-4 offset-md-2">
+          <div class="block"></div>
+          <div class="mt-5 mx-5">
+            <div class="">
+                <h2 class="text-primary-emphasis fw-bold fs-1">CHRISTOPER MORGAN</h2>
+            </div>
+
+            <img src="assets/img/hi.jpg" alt="" height="300px" width="300px" class=" mt-5 ms-2 rounded-50">
+              
+            <div class="mt-5 w-75">
+              <h3 class="fw-bold text-primary-emphasis">Contact</h3>
+              <hr class="border border-primary border-opacity-100 border-2">
+              <p class="mb-0 fw-bold fs-5">Address:</p>
+              <p>177 Great Portland Street, London W52 6PQ</p>
+              <br>
+              <p class="mb-0 fw-bold">Phone:</p>
+              <p>+44 (0) 20 7666 8555</p>
+              <br>
+              <p class="mb-0 fw-bold">Email:</p>
+              <p>christoper.m@gmail.com</p>
+              <br>
+              <p class="mb-0 fw-bold">Web Page:</p>
+              <a class="d-block" href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwif46jK-I79AhWCVTABHRMNBAkQPAgI">https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwif46jK-I79AhWCVTABHRMNBAkQPAgI</a>
+              <br>
+              <h3 class="fw-bold text-primary-emphasis">Languages</h3>
+              <hr class="border border-primary border-opacity-100 border-2">
+              <p class="mb-0">Spanish-C2</p>
+              <p class="mb-0">Chinese-A1</p>
+              <p class="">German-A2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 col-sm-12 col-md-5 margin-top">
+          <h3 class="fw-bold text-primary-emphasis">Summary</h3>
+          <hr class="border border-primary border-opacity-100 border-2">
+          <p>Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including HTML5, PHP OOP, JavaScript, CSS, MySQL. Strong background in project management and customer relations.</p>
+          <br>
+          <h3 class="fw-bold text-primary-emphasis">Skill Highlights</h3>
+          <hr class="border border-primary border-opacity-100 border-2">     
+          <div class="height-ul ps-2 d-flex column-gap-5">
+            <ul>
+              <li>Project management</li>
+              <li>Strong decision maker</li>
+              <li>Complex problem solver</li>
+            </ul>
+            <ul>
+              <li>Creative </li>
+              <li>Strong decision maker</li>
+              <li>Complex problem solver</li>
+            </ul>
+          </div>
+          <h3 class="fw-bold text-primary-emphasis">Experience</h3>
+          <hr class="border border-primary border-opacity-100 border-2">  
+          <p class="mb-0"><strong>Web Developer</strong> - 09/2015 to 05/2019</p>
+          <p><strong>Luna Web Design</strong>, New York</p>
+          <div class="ps-2">
+            <ul>
+              <li>Cooperate with designers to create clean interfaces and simple, intuitive interactions and experiences.</li>
+              <li>Develop project concepts and maintain optimal workflow.</li>
+              <li>Work with senior developer to manage large, complex design projects for corparate clients.</li>
+              <li>Complete detailed programming and development tasks for front end public and internal websites as well as challenging bacj-end server code.</li>
+              <li>Carry out queality assurance tests to discover errors and optimize usability.</li>
+            </ul>
+          </div>
+          <h3 class="fw-bold text-primary-emphasis">Education</h3>
+          <hr class="border border-primary border-opacity-100 border-2">
+          <p>Bachelor of Science: <strong>Computer information Systems</strong> - 2014 <strong>Columbia University</strong>, NY</p> 
+          <h3 class="fw-bold text-primary-emphasis">Certifications</h3>
+          <hr class="border border-primary border-opacity-100 border-2"> 
+          <p class="mb-0">PHP Framework (certificate): <strong>Zend, codeigniter, Symfony.</strong></p>
+          <p>Porgramming Languages: <strong>JavaScript, HTML5, PHP, OOP, CSS, SQL, MySQL.</strong></p>
+          <div class="margin-top d-flex flex-row-reverse">
+            <div class="block"></div>
+          </div>
+        </div> -->
+    </div>
+    </main>
+    <footer></footer>
+    <script src="assets/js/boostrap/bootstrap.min.js"></script>
+    <script src="assets/js/site/index/index.js"></script>
+  </body>
+</html>

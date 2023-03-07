@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="../assets/css/lib/boostrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body> 
+  <div class="imagen-fondo">
+  </div>
+  <div class="container">
+    <div class="w-100">
+      <h1>Tabla Periódica de los Elementos Químicos</h1>
+    </div>
+    <div class="d-flex w-100 justify-content-center">
+      <div class="first-column">
+        {{#each elements as |element|}}
+          {{#if (equalHelper 1 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="second-column">
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        {{#each elements as |element|}}
+          {{#if (equalHelper 2 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="third-column">
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        {{#each elements as |element|}}
+          {{#if (equalHelper 3 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="fourth-column">
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        {{#each elements as |element|}}
+          {{#if (equalHelper 4 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="fifth-column">
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        {{#each elements as |element|}}
+          {{#if (equalHelper 5 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="six-column">
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        {{#each elements as |element|}}
+          {{#if (equalHelper 6 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="seven-column">
+      <div class="bloque espacio">
+        <div class="id"> &nbsp; </div>
+        <div class="symbol">&nbsp;</div>
+        <div class="element">&nbsp;</div>
+      </div>
+      <div class="bloque espacio">
+        <div class="id"> &nbsp; </div>
+        <div class="symbol">&nbsp;</div>
+        <div class="element">&nbsp;</div>
+      </div>
+      <div class="bloque espacio">
+        <div class="id"> &nbsp; </div>
+        <div class="symbol">&nbsp;</div>
+        <div class="element">&nbsp;</div>
+      </div>
+        {{#each elements as |element|}}
+          {{#if (equalHelper 7 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="eight-column">
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        {{#each elements as |element|}}
+          {{#if (equalHelper 8 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="nine-column">
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        {{#each elements as |element|}}
+          {{#if (equalHelper 9 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="ten-column">
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        {{#each elements as |element|}}
+          {{#if (equalHelper 10 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="eleven-column">
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        {{#each elements as |element|}}
+          {{#if (equalHelper 11 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="twelve-column">
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        {{#each elements as |element|}}
+          {{#if (equalHelper 12 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="thirteen-column">
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        {{#each elements as |element|}}
+          {{#if (equalHelper 13 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+            <div class="bloque {{element.group}}">
+              <div class="id">{{element.id}}</div>
+              <div class="symbol">{{element.symbol}}</div>
+              <div class="element">{{element.name}}</div>
+            </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="fourteen-column">
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        {{#each elements as |element|}}
+        {{#if (equalHelper 14 element.column)}}
+        {{#if (removedElement element)}}
+          <div class="bloque {{element.group}}">
+            <div class="id"> &nbsp; </div>
+            <div class="symbol">&nbsp;</div>
+            <div class="element">&nbsp;</div>
+          </div>
+        {{else}}
+        <div class="bloque {{element.group}}">
+          <div class="id">{{element.id}}</div>
+          <div class="symbol">{{element.symbol}}</div>
+          <div class="element">{{element.name}}</div>
+        </div>
+        {{/if}}
+        {{/if}}
+        {{/each}}
+      </div>
+      <div class="fifteen-column">
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        {{#each elements as |element|}}
+         {{#if (equalHelper 15 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="sixteen-column">
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        {{#each elements as |element|}}
+          {{#if (equalHelper 16 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="seventeen-column">
+        <div class="bloque espacio">
+          <div class="id"> &nbsp; </div>
+          <div class="symbol">&nbsp;</div>
+          <div class="element">&nbsp;</div>
+        </div>
+        {{#each elements as |element|}}
+          {{#if (equalHelper 17 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+      <div class="eighteen-column">
+        {{#each elements as |element|}}
+          {{#if (equalHelper 18 element.column)}}
+            {{#if (removedElement element)}}
+              <div class="bloque {{element.group}}">
+                <div class="id"> &nbsp; </div>
+                <div class="symbol">&nbsp;</div>
+                <div class="element">&nbsp;</div>
+              </div>
+            {{else}}
+              <div class="bloque {{element.group}}">
+                <div class="id">{{element.id}}</div>
+                <div class="symbol">{{element.symbol}}</div>
+                <div class="element">{{element.name}}</div>
+              </div>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="d-flex mt-4 justify-content-center">
+      <div class="bloque espacio">La</div>
+      <div class="bloque espacio">La</div>
+      <div class="bloque espacio">La</div>
+      {{#each elements as |element|}}
+        {{#if (equalHelper 1 element.row)}}
+          {{#if (removedElement element)}}
+            <div class="bloque {{element.group}}">
+              <div class="id"> &nbsp; </div>
+              <div class="symbol">&nbsp;</div>
+              <div class="element">&nbsp;</div>
+            </div>
+          {{else}}
+            <div class="bloque {{element.group}}">
+              <div class="id">{{element.id}}</div>
+              <div class="symbol">{{element.symbol}}</div>
+              <div class="element">{{element.name}}</div>
+            </div>
+          {{/if}}
+        {{/if}}
+      {{/each}}
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="bloque espacio">La</div>
+      <div class="bloque espacio">La</div>
+      <div class="bloque espacio">La</div>
+      {{#each elements as |element|}}
+        {{#if (equalHelper 2 element.row)}}
+          {{#if (removedElement element)}}
+            <div class="bloque {{element.group}}">
+              <div class="id"> &nbsp; </div>
+              <div class="symbol">&nbsp;</div>
+              <div class="element">&nbsp;</div>
+            </div>
+          {{else}}
+            <div class="bloque {{element.group}}">
+              <div class="id">{{element.id}}</div>
+              <div class="symbol">{{element.symbol}}</div>
+              <div class="element">{{element.name}}</div>
+            </div>
+          {{/if}}
+        {{/if}}
+      {{/each}}
+    </div>
+
+    <div class="mt-4 d-flex justify-content-center">
+      <div>
+        <div class="w-100">
+          <p class="text-metales">Metales</p>
+        </div>
+        <div class="d-flex">
+          <p class="text text-alcalinos">Alcalinos</p>
+          <p class="text text-alcalinoterreos">Alcalinotérreos</p>
+          <p class="text text-metales-de-transicion">Metales de Transición / Bloque D</p>
+          <div>
+            <p class="text-lantanidos">Lantánidos</p>
+            <p class="text-actinidos">Actínidos</p>
+          </div>
+          <p class="text text-otros-metales">Otros metales</p>
+        </div>
+      </div>
+      <div>
+        <p class="text-metaloides">Metaloides</p>
+      </div>
+      <div>
+        <div>
+          <p class="text-no-metales">No Metales</p>
+        </div>
+        <div class="d-flex">
+          <p class="text text-otros-no-metales">Otros No Metales</p>
+          <p class="text text-halogenos">Halógenos</p>
+          <p class="text text-gases-nobles">Gases Nobles</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

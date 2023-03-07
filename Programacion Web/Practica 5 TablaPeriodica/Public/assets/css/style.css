@@ -1,0 +1,225 @@
+body {
+  font-weight: bold;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+} 
+
+.imagen-fondo {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/image.webp) center center no-repeat;
+    background-size: cover;
+}
+
+.imagen-fondo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(178, 0, 0), 0 0 70px rgb(178, 0, 0), 0 0 80px #0af, 0 0 100px rgb(178, 0, 0), 0 0 150px #0af;
+  margin-top: 2px;
+}
+
+.bloque {
+  width: 70px;
+  border: 2px solid white;
+  text-align: center;
+  font-size: 12px;
+}
+
+.bloque.espacio {
+  opacity: 0;
+}
+
+.id {
+  font-size: 10px;
+  margin-bottom: -4px;
+  margin-top: 1px;
+}
+
+.element {
+  font-size: 10px;
+  margin-top: -2px;
+}
+
+.symbol {
+  font-size: 23px;
+}
+
+.text {
+  width: 130px;
+  height: 70px;
+  text-align: center;
+  padding: 10px 0px 5px 0px;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0;
+}
+
+.text-metales {
+  width: 100%;
+  background-color: rgb(172, 172, 172);
+  text-align: center;
+  margin: 0;
+  border-bottom: 4px solid white;
+}
+
+.text-alcalinos {
+  background-color: rgb(168, 104, 227);
+  padding: 20px 0px 5px 0px;
+  font-size: 16px;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  border-left: 4px solid white;
+}
+
+.text-alcalinoterreos {
+  background-color: rgb(226, 128, 144);
+  padding: 20px 0px 5px 0px;
+  font-size: 16px;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.text-metales-de-transicion {
+  background-color: rgb(255, 181, 43);
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  font-size: 12.5px;
+}
+
+.text-lantanidos {
+  background-color:rgb(255, 105, 51);
+  margin: 0;
+  height: 50%;
+  width: 128px;
+  text-align: center;
+  padding: 5px 0px 0px 0px;
+}
+
+.text-actinidos {
+  background-color: rgb(209, 72, 72);
+  margin: 0;
+  height: 50%;
+  text-align: center;
+  padding: 3px 0px 0px 0px;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.text-otros-metales {
+  background-color: rgb(255, 225, 0);
+  padding: 20px 0px 5px 0px;
+  border-left: 4px solid white;
+  font-size: 16px;
+  border-bottom: 4px solid white;
+}
+
+.text-metaloides {
+  height: 100%;
+  background-color: rgb(205, 255, 68);
+  margin: 0;
+  width: 200px;
+  text-align: center;
+  padding: 30px 0px 5px 0px;
+  border: 4px solid white;
+  font-size: 18px;
+}
+
+.text-no-metales {
+  width: 100%;
+  background-color: rgb(172, 172, 172);
+  margin: 0;
+  text-align: center;
+  border-bottom: 4px solid white;
+}
+
+.text-otros-no-metales {
+  background-color: rgb(74, 197, 74);
+  padding: 10px 0px 5px 0px;
+  border-right: 4px solid white;
+  font-size: 16px;
+  border-bottom: 4px solid white;
+}
+
+.text-halogenos {
+  padding: 20px 0px 5px 0px;
+  background-color: rgb(102, 230, 187);
+  font-size: 16px;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.text-gases-nobles {
+  padding: 20px 0px 5px 0px;
+  background-color: rgb(52, 214, 214);
+  font-size: 16px;
+  border-bottom: 4px solid white;
+  border-right: 4px solid white;
+}
+
+.none {
+  background-color: gray;
+}
+
+.alcalinos {
+  background-color: rgb(168, 104, 227);
+}
+
+.otrosNoMetales {
+  background-color: rgb(74, 197, 74);
+}
+
+.alcalinoterreos {
+  background-color: rgb(226, 128, 144);
+}
+
+.metalesDeTransicion {
+  background-color: rgb(255, 181, 43);
+}
+
+.lantanidos {
+  background-color: rgb(255, 105, 51);
+}
+
+.actinidos {
+  background-color: rgb(209, 72, 72);
+}
+
+.otrosMetales {
+  background-color: rgb(255, 225, 0);
+}
+
+.metaloides {
+  background-color: rgb(205, 255, 68);
+}
+
+.halogenos {
+  background-color: rgb(102, 230, 187);
+}
+
+.gasesNobles {
+  background-color: rgb(52, 214, 214);
+}
+
+a {
+  display: inline-block;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%, 50%);
+}

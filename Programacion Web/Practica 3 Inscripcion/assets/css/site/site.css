@@ -1,0 +1,13 @@
+.input-error {
+  border-color: red;
+  border-width: medium;
+}
+
+.input-success {
+  border-color: rgb(85, 255, 0);
+  border-width: medium;
+}
+
+.toast {
+  opacity: 1 !important;
+}

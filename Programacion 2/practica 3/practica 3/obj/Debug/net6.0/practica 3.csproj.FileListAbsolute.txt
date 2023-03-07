@@ -1,0 +1,24 @@
+C:\Users\carlo\source\repos\practica 3\practica 3\bin\Debug\net6.0\practica 3.exe
+C:\Users\carlo\source\repos\practica 3\practica 3\bin\Debug\net6.0\practica 3.deps.json
+C:\Users\carlo\source\repos\practica 3\practica 3\bin\Debug\net6.0\practica 3.runtimeconfig.json
+C:\Users\carlo\source\repos\practica 3\practica 3\bin\Debug\net6.0\practica 3.dll
+C:\Users\carlo\source\repos\practica 3\practica 3\bin\Debug\net6.0\practica 3.pdb
+C:\Users\carlo\source\repos\practica 3\practica 3\obj\Debug\net6.0\practica 3.csproj.AssemblyReference.cache
+C:\Users\carlo\source\repos\practica 3\practica 3\obj\Debug\net6.0\practica 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlo\source\repos\practica 3\practica 3\obj\Debug\net6.0\practica 3.AssemblyInfoInputs.cache
+C:\Users\carlo\source\repos\practica 3\practica 3\obj\Debug\net6.0\practica 3.AssemblyInfo.cs
+C:\Users\carlo\source\repos\practica 3\practica 3\obj\Debug\net6.0\practica 3.csproj.CoreCompileInputs.cache
+C:\Users\carlo\source\repos\practica 3\practica 3\obj\Debug\net6.0\practica 3.dll
+C:\Users\carlo\source\repos\practica 3\practica 3\obj\Debug\net6.0\refint\practica 3.dll
+C:\Users\carlo\source\repos\practica 3\practica 3\obj\Debug\net6.0\practica 3.pdb
+C:\Users\carlo\source\repos\practica 3\practica 3\obj\Debug\net6.0\practica 3.genruntimeconfig.cache
+C:\Users\carlo\source\repos\practica 3\practica 3\obj\Debug\net6.0\ref\practica 3.dll
+C:\Users\carlo\source\repos\practica 3\practica 3\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+C:\Users\carlo\source\repos\practica 3\practica 3\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\carlo\source\repos\practica 3\practica 3\bin\Debug\net6.0\SpreadsheetLight.dll
+C:\Users\carlo\source\repos\practica 3\practica 3\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\carlo\source\repos\practica 3\practica 3\bin\Debug\net6.0\System.IO.Packaging.dll
+C:\Users\carlo\source\repos\practica 3\practica 3\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\carlo\source\repos\practica 3\practica 3\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\carlo\source\repos\practica 3\practica 3\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\carlo\source\repos\practica 3\practica 3\obj\Debug\net6.0\practica 3.csproj.CopyComplete

@@ -1,0 +1,50 @@
+.block {
+  width: 400px;
+  height: 50px;
+  background-color: rgb(21, 75, 190);
+  margin-top: 50px;
+  padding: 0;
+}
+
+.width-block {
+  width: 700px;
+}
+
+.font-size-name {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.margin-top {
+  margin-top: 200px;
+}
+
+.margin-top-div {
+  margin-top: 150px;
+}
+
+.height-ul {
+  height: 120px;
+}
+
+.input-error {
+  border-color: red;
+  border-width: medium;
+}
+
+.input-success {
+  border-color: rgb(85, 255, 0);
+  border-width: medium;
+}
+
+.rounded-50 {
+  border-radius: 50%;
+}
+
+.max-width-name {
+  max-width: 400px;
+}
+
+.max-width-p {
+  max-width: 500px;
+}
