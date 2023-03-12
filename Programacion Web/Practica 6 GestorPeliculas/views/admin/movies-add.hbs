@@ -1,0 +1,80 @@
+<main class="container mt-5">
+  <div class="card">
+    <div class="card-header m-0 p-0">
+      <h1 class="text-center bg-primary">Movie Form</h1>
+    </div>
+
+    <div class="card-body">
+      {{#if editMode}}
+        <form method="post" action="/admin/movie-edit" class="bg-white p-2 rounded-2">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name of the movie:</label>
+            <input type="text" class="form-control" id="name" name="Name" value="{{mov.name}}">
+          </div>
+          <div class="mb-3">
+            <label for="image" class="form-label">Image URL:</label>
+            <input type="text" class="form-control" id="image" name="Image" value="{{mov.imageUrl}}">
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Description:</label>
+            <input type="text" class="form-control" id="description" name="Description" value="{{mov.description}}">
+          </div>
+          <div class="mb-3">
+            <label for="gender" class="form-label">Genre:</label>
+            <select class="form-select" name="Genre" id="genre-select">
+              <option value="action" {{#if (equal mov.genre "action")}}selected{{/if}}>Action</option>
+              <option value="adventure" {{#if (equal mov.genre "adventure")}}selected{{/if}}>Adventure</option>
+              <option value="comedy" {{#if (equal mov.genre "comedy")}}selected{{/if}}>Comedy</option>
+              <option value="drama" {{#if (equal mov.genre "drama")}}selected{{/if}}>Drama</option>
+              <option value="terror" {{#if (equal mov.genre "terror")}}selected{{/if}}>Terror</option>
+              <option value="novel" {{#if (equal mov.genre "novel")}}selected{{/if}}>Novel</option>
+              <option value="suspense" {{#if (equal mov.genre "suspense")}}selected{{/if}}>Suspense</option>
+              <option value="documentary" {{#if (equal mov.genre "documentary")}}selected{{/if}}>Documentary</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="status-select" class="form-label">Status:</label>
+            <select class="form-select" name="Status" id="status-select">
+              <option value="active" {{#if (equal mov.status "active")}}selected{{/if}}>Active</option>
+              <option value="inactive" {{#if (equal mov.status "inactive")}}selected{{/if}}>Inactive</option>
+            </select>
+          </div>
+
+          <input type="hidden" name="MovieID" value="{{mov.id}}">
+          <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+
+      {{else}}
+        <form method="post" action="/admin/movies-add" class="bg-white p-2 rounded-2">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name of the movie:</label>
+            <input type="text" class="form-control" id="name" name="Name" value="{{mov.name}}">
+          </div>
+          <div class="mb-3">
+            <label for="image" class="form-label">Image URL:</label>
+            <input type="text" class="form-control" id="image" name="Image" value="{{mov.imageUrl}}">
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Description:</label>
+            <input type="text" class="form-control" id="description" name="Description" value="{{mov.description}}">
+          </div>
+          <div class="mb-3">
+            <label for="gender" class="form-label">Genre:</label>
+            <select class="form-select" name="Genre" id="genre-select">
+              <option>Please choose an option</option>
+              <option value="action">Action</option>
+              <option value="adventure">Adventure</option>
+              <option value="comedy">Comedy</option>
+              <option value="drama">Drama</option>
+              <option value="terror">Terror</option>
+              <option value="novel">Novel</option>
+              <option value="suspense">Suspense</option>
+              <option value="documentary">Documentary</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Add</button>
+      {{/if}}
+    </div>
+  </div>
+</main>

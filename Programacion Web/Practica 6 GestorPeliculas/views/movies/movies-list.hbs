@@ -1,0 +1,38 @@
+<main class="container-fluid ">
+  {{#if hasMovies}}
+    <div class="row">
+      {{#each movs as |movie|}}
+        {{#if (equal movie.status "active")}}
+          <div class="card mt-3 mx-2 p-0" style="width: 17.7rem;">
+            <img
+              src="{{movie.imageUrl}}"
+              class="card-img-top" alt="{{movie.name}}" height="350px">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-danger">{{movie.name}}</h5>
+              <p class="card-text fw-lighter"><span class="fw-bold text-danger-emphasis">Description: </span>{{movie.description}}
+              </p>
+              <p class="card-text mb-0 text-danger-emphasis">Genre: <span class="fw-lighter text-black">{{movie.genre}}</span></p>
+              <p class="card-text text-danger-emphasis">Status: <span class="fw-lighter text-black">Active</span></p>
+            </div>
+          </div>
+        {{else}}
+            <div class="card mt-3 mx-2 inactive p-0" style="width: 17.7rem;">
+              <img
+                src="{{movie.imageUrl}}"
+                class="card-img-top" alt="{{movie.name}}" height="350px">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-danger">{{movie.name}}</h5>
+                <p class="card-text fw-lighter"><span class="fw-bold text-danger-emphasis">Description:</span>{{movie.description}}
+                </p>
+                <p class="card-text mb-0 text-danger-emphasis">Genre: <span class="fw-lighter text-black">{{movie.genre}}</span></p>
+                <p class="card-text text-danger-emphasis">Status: <span class="fw-lighter text-black">Inactive</span></p>
+              </div>
+              <div class="text-inactive">INACTIVE</div>
+            </div>
+        {{/if}}
+      {{/each}}
+    </div>
+  {{else}}
+    <h1>No movies found</h1>
+  {{/if}}
+</main>

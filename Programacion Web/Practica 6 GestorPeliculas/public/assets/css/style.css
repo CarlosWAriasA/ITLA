@@ -1,0 +1,47 @@
+body {
+  background-color: #00092C;
+  font-family: 'Monserrat', sans-serif;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #FF0303;
+}
+
+.nav-color {
+  background-color: #5463FF;
+}
+
+.logo-title {
+  background-color: #FF0303;
+}
+
+.margin-top {
+  margin-top: 200px;
+}
+
+.text-bienvenido {
+  color: #ff0000;
+  font-size: 88px;
+  font-family: cursive, sans-serif;
+}
+
+.card.inactive {
+  filter: opacity(50%);
+  position: relative;
+}
+
+.text-inactive {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  opacity: 1 !important;
+  filter: opacity(100%);
+  background-color: #FF0303;
+  padding: 5px;
+  border-radius: 20px;
+}
